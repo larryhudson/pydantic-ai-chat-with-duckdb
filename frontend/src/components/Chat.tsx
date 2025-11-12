@@ -7,7 +7,7 @@ import { renderToolPart } from './ToolResults/toolRenderers';
 export function Chat() {
   const {messages, sendMessage, status} = useChat({
     transport: new DefaultChatTransport({
-      api: 'http://localhost:8000/chat',
+      api: '/api/chat',
     }),
   });
   const [input, setInput] = useState('');
